@@ -1,6 +1,7 @@
-import React from 'react'
+import React from "react";
 import styles from "./sidebar.module.css";
-import MenuLink from "./menuLink/menuLink";
+import MenuLink from "./menuLink/MenuLink";
+import Image from "next/image";
 import {
   MdDashboard,
   MdSupervisedUserCircle,
@@ -80,18 +81,31 @@ const menuItems = [
 const Sidebar = () => {
   return (
     <div className={styles.container}>
+      <div className={styles.user}>
+      <Image
+      className={styles.userImage}
+      src="/noavatar.png"
+      width={50}
+      height={50}
+      alt="User"
+    />
+      <div className={styles.userDetail}>
+          <span className={styles.username}>Aryan Anurag</span>
+          <span className={styles.userTitle}>Administrator</span>
+        </div>
+      </div>
       <ul>
         {menuItems.map((cat) => (
-          <li key={cat.title} >
+          <li key={cat.title}>
             <span className={styles.cat}>{cat.title}</span>
-            {cat.list.map(item=>(
+            {cat.list.map((item) => (
               <MenuLink item={item} key={item.title} />
             ))}
           </li>
         ))}
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;
