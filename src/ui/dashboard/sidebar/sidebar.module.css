@@ -27,12 +27,18 @@
   font-size: 12px;
   color: #b7bac1;
 }
+
+.list {
+  list-style: none;
+}
+
 .cat {
   color: #b7bac1;
   font-weight: bold;
   font-size: 13px;
   margin: 10px 0px;
 }
+
 .logout {
   padding: 20px;
   margin: 5px 0px;

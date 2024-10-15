@@ -1,8 +1,12 @@
 import React from 'react'
-
+import styles from '../../../ui/dashboard/users/users.module.css';
 const Users = () => {
   return (
-    <div>Users</div>
+    <div className={styles.container}>
+      <div className={styles.top}>
+        
+      </div>
+    </div>
   )
 }
 
