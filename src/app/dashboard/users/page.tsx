@@ -3,6 +3,7 @@ import styles from "../../../ui/dashboard/users/users.module.css";
 import Search from "@/ui/dashboard/search/search";
 import Link from "next/link";
 import Image from "next/image";
+import Pagination from "@/ui/dashboard/pagination/pagination";
 const Users = () => {
   return (
     <div className={styles.container}>
@@ -56,6 +57,7 @@ const Users = () => {
           </tr>
         </tbody>
       </table>
+      <Pagination/>
     </div>
   );
 };
