@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
+import styles from "@/ui/login/login.module.css";
 
 const Login = () => {
   return (
-    <div>Login</div>
-  )
-}
+    <div className={styles.container}>
+      <form action="" className={styles.form}>
+        <h1>Login</h1>
+        <input type="text" placeholder="Username" />
+        <input type="password" placeholder="Password" />
+        <button>Login</button>
+      </form>
+    </div>
+  );
+};
 
-export default Login
+export default Login;
